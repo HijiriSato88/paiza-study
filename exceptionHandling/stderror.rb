@@ -1,11 +1,11 @@
 begin
-    enemies = ["スライム","ドラゴン","魔王"]
+    enemies = ["slime","gorst","maou"]
     number = 0
 
-    puts "勇者は敵に遭遇した"
-    puts "勇者は#{enemies[2/number]}と戦った"
+    puts "tanta encounter monster"
+    puts "tanta attack #{enemies[2/number]}"
 rescue ZeroDivisionError => e
-    STDERROR.puts "その敵は表示できません"
+    STDERROR.puts "dont show Thats enemy "
 ensure
-    puts "勇者は勝利した"
+    puts "win"
 end
